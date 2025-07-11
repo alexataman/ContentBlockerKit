@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-protocol ContentDetection {
+public protocol ContentDetection {
     var name: String { get }
     func analyze(fileURL: URL?, imageFrames: [UIImage]) async -> DetectionStatus
 }
 
-enum DetectionStatus: Equatable {
+public enum DetectionStatus: Equatable {
     case passed
     case failed(reason: String)
 }

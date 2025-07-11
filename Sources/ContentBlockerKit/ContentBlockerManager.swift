@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class ContentBlockerManager {
+open class ContentBlockerManager {
     private let detectors: [ContentDetection] = [
         HateSpeechDetector(),
         NSFWContentDetector(),
@@ -98,7 +98,7 @@ class ContentBlockerManager {
 }
 
 extension ContentBlockerManager {
-    enum ContentType {
+    public enum ContentType {
         case video
         case image
     }
