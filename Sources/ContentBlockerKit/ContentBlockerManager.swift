@@ -16,8 +16,10 @@ open class ContentBlockerManager {
     ]
 
     private(set) var lastResults: [String: DetectionStatus] = [:]
+    
+    public init() {}
 
-    func verifyContent(from fileURL: URL, mediaType: ContentBlockerManager.ContentType) async -> Bool {
+    public func verifyContent(from fileURL: URL, mediaType: ContentBlockerManager.ContentType) async -> Bool {
         let start = CFAbsoluteTimeGetCurrent()
         lastResults = [:]
 
@@ -46,7 +48,7 @@ open class ContentBlockerManager {
         return lastResults.values.allSatisfy { $0 == .passed }
     }
 
-    func getFailureReasons() -> [String] {
+    public func getFailureReasons() -> [String] {
         lastResults.compactMap { detectorName, status in
             switch status {
             case .passed:
