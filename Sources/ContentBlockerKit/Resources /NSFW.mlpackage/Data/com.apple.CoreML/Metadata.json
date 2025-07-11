@@ -1,0 +1,6 @@
+{
+  "MLModelVersionStringKey" : "1.1",
+  "MLModelDescriptionKey" : "NSFW is cabable of scanning images for Nudity Content.",
+  "MLModelAuthorKey" : "LOVOO GmbH",
+  "MLModelLicenseKey" : "BSD"
+}

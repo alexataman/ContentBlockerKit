@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "190AED73-9FE2-429A-8C64-858D6F6A0E99": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "9B782BC5-DCA5-4C30-B290-B5FF283AD4D5": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "DA3FBA5B-32CC-4E64-ACD0-CB7020BCC857": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "HateSpeach.mlmodel",
+            "path": "com.apple.CoreML/HateSpeach.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "DA3FBA5B-32CC-4E64-ACD0-CB7020BCC857"
+}
